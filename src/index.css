@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.parent {
+  color: rgba(0, 0, 0, 0.7); /* npm Example background color with opacity */
+}
+
+.child {
+  color: rgba(0, 0, 0, 1);
+}
+
+@keyframes vertical-move {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.moving-number {
+  animation: vertical-move 1s ease-in-out infinite;
+}
+
